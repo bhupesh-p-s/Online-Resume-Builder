@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The stored data:</p>
+
+<table border='1'>
+  <tr>
+    <th>name</th>
+    <th>field</th>
+    <th>education 1</th>
+    <th>education 1 duration</th>
+    <th>education 1 score</th>
+    <th>education 2</th>
+    <th>education 2 duration</th>
+    <th>education 2 score</th>
+    <th>skill 1</th>
+    <th>skill 2</th>
+    <th>skill 3</th>
+    <th>skill 4</th>
+  </tr>
+  {% for x in mymembers %}
+    <tr>
+      <td>{{ x.name }}</td>
+        <td>{{ x.field }}</td>
+      <td>{{ x.education_1 }}</td>
+      <td>{{ x.education_1_dur }}</td>
+        <td>{{ x.education1_score }}</td>
+        <td>{{ x.education_2 }}</td>
+        <td>{{ x.education_2_dur }}</td>
+          <td>{{ x.education2_score }}</td>
+      <td>{{ x.field }}</td>
+      <td>{{ x.skills_1 }}</td>
+        <td>{{ x.skills_2 }}</td>
+      <td>{{ x.skills_3 }}</td>
+      <td>{{ x.skills_4 }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>                  
